@@ -16,7 +16,6 @@
     $execute = $koneksi->query($query);
     $response = [];
 
-    $response = [];
 
 
     if ($execute) {

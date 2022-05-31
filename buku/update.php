@@ -15,7 +15,6 @@ $query =  "UPDATE `buku` SET `JUDUL`='$judul',`PENGARANG`='$pengarang',`JUMLAH`=
 $execute = $koneksi->query($query);
 $response = [];
 
-$response = [];
 
 
 if ($execute) {

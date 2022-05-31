@@ -11,7 +11,7 @@ $query =  "DELETE FROM `buku` WHERE ISBN = $isbn";
 $execute = $koneksi->query($query);
 $response = [];
 
-$response = [];
+
 
 
 if ($execute) {
