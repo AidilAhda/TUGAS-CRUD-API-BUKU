@@ -7,11 +7,11 @@ header("Content-Type: application/json; charset=UTF-8");
 $isbn = $_POST['isbn'];
 $judul = $_POST['judul'];
 $pengarang = $_POST['pengarang'];
-$jumlah = $_POST['tanggal'];
+$jumlah = $_POST['jumlah'];
 $tanggal = $_POST['tanggal'];
 $abstrak = $_POST['abstrak'];
 
-$query =  "UPDATE `buku` SET `JUDUL`='$judul',`PENGARANG`='$pengarang',`JUMLAH`='$jumlah',`TANGGAL`='$tanggal',`ABSTRAK`='$abstrak' WHERE `ISBN`='$isbn'";
+$query =  "UPDATE `buku` SET `JUDUL`='$judul',`PENGARANG`='$pengarang', `JUMLAH`='$jumlah',`TANGGAL`='$tanggal',`ABSTRAK`='$abstrak' WHERE `ISBN`='$isbn'";
 $execute = $koneksi->query($query);
 $response = [];
 
